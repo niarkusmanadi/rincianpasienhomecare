@@ -1,0 +1,33 @@
+body{
+   margin: 10px 10px;
+    color: black;
+   
+}
+
+input{
+    width: 150px;
+    height: 30px;
+}
+
+select{
+    width: 150px;
+    height: 30px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 700;
+}
+.mrskrs{
+    margin: 10px 0;
+}
+
+.obatperawatan #obat_perawatan{
+    width: 250px;
+    height: 100px;
+}
+
+.obatpulang #obat_bawapulang{
+    width: 250px;
+    height: 100px;
+}
