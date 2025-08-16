@@ -1,7 +1,4 @@
-document
-  .getElementById("waFormsubmit")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+ function kirimWa() {
 
     // Data pasien
     let nama = document.getElementById("nama").value;
@@ -40,10 +37,10 @@ document
     // Transport & dokter
     let qtytransportperawat = document.getElementById("qty-transportperawat").value;
     let btransportperawat = document.getElementById("btransportperawat").value;
-    let totalbiayatransportperawat = document.getElementById("totalbiayatransportperawat").value;
+    let totalbiayatransportperawat = document.getElementById("total-biayatransportperawat").value;
     let qtytransportperawatoffjadwal = document.getElementById("qty-transportperawat-offjadwal").value;
     let btransportperawatoffjadwal = document.getElementById("btransportperawat-offjadwal").value;
-    let totalbiayatransportperawatoffjadwal = document.getElementById("totalbiayatransportperawat-offjadwal").value;
+    let totalbiayatransportperawatoffjadwal = document.getElementById("total-biayatransportperawat-offjadwal").value;
     let biayavisitedokter = document.getElementById("biaya-visitedokter").value;
 
     let totalbiayatambahan = document.getElementById("total-biaya-tambahan").value;
@@ -105,8 +102,8 @@ Total Biaya Tambahan = ${totalbiayatambahan}
 Total Harus Dibayar  = ${totalbiayaharusdibayar}`;
 
     // Redirect ke WhatsApp
-    let url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
-    window.location.href = url;
+// Buka WhatsApp
+      window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");
 
     
-  });
+  };
