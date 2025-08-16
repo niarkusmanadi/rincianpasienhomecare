@@ -15,7 +15,9 @@
     let totalsurflo = document.getElementById("total-surflo").value;
     let qtyspuit = document.getElementById("qty-spuit").value;
     let totalspuit = document.getElementById("total-spuit").value;
-
+    let qtyhipafix = document.getElementById("qty-hipafix").value;
+    let totalhipafix = document.getElementById("total-hipafix").value;
+   
     // Jasa
     let qtypasanginfus = document.getElementById("qty-pasang-infus").value;
     let totalpasanginfus = document.getElementById("total-pasang-infus").value;
@@ -66,7 +68,7 @@ Krs : ${KRS}
 - Infus set ${qtyinfus} x 25.000 = ${totalinfus}
 - Jarum infus Surflo ${qtysurflo} x 27.500 = ${totalsurflo}
 - Spuit ${qtyspuit} x 5.000 = ${totalspuit}
-- Hypafix, kassa, plaster, kapas alkohol 1x 37.500 = 37.500
+- Hypafix, kassa, plaster, kapas alkohol ${qtyhipafix}x 37.500 = ${totalhipafix}
 
 2. Jasa pasang infus ${qtypasanginfus} x 50.000 = ${totalpasanginfus}
    Jasa lepas infus ${qtylepasinfus} x 10.000 = ${totallepasinfus}
@@ -103,7 +105,7 @@ Total Harus Dibayar  = ${totalbiayaharusdibayar}`;
 
     // Redirect ke WhatsApp
 // Buka WhatsApp
-      window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");
+      window.open(`https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`, "_blank");
 
     
   };

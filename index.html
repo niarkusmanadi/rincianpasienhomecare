@@ -4,6 +4,13 @@
 <head>
     <title>Form Kirim ke WhatsApp</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+          body { font-family: Arial, sans-serif; padding: 20px; margin:auto 30px;}
+    label { display: block; margin-top: 10px; }
+    input { margin: 5px 0; padding: 5px; width: 200px; }
+    .total { font-weight: bold; }
+   
+    </style>
 </head>
 
 <body>
@@ -30,7 +37,7 @@
             </select>
         </div>
 
-        <label>Pasien:</label><br />
+        <label>Pasien:</label>
         <div id="pasienklinik">
             <div class="input-group">
                 <select name="pasien-klinik" required>
@@ -190,7 +197,7 @@
         <div class="obatperawatan">
             <h3>8. Obat Selama Perawatan</h3>
             <input type="textarea" id="obat_perawatan" placeholder="Obat yang diberikan selama perawatan"
-                required /><br />
+                 /><br />
 
             <input type="textarea" id="total_obat_perawatan"
                 placeholder="harga obat yang diberikan selama perawatan" /><br />
@@ -198,7 +205,7 @@
 
         <div class="obatpulang">
             <h3>9. Obat Bawa Pulang</h3>
-            <input type="textarea" id="obat_bawapulang" placeholder="Obat Pulang" required /><br />
+            <input type="textarea" id="obat_bawapulang" placeholder="Obat Pulang"  /><br />
             <input type="text" id="total_obat_bawapulang" placeholder="harga obat yang dibawa pulang" /><br />
         </div>
 
@@ -261,7 +268,7 @@
                 </select>
 
                 @ Rp <span class="harga-alatbahan">0</span>
-                x <input type="number" class="qty-alatbahan" min="1" value="1" required>
+                x <input type="number" class="qty-alatbahan" min="0" value="0" >
                 = Rp <span class="total-alatbahan">0</span>
 
                 <button type="button" class="hapus-item-alatbahan">-</button>
@@ -290,7 +297,7 @@
                 </select>
 
                 @ Rp <span class="harga-obatoralsalep">0</span>
-                x <input type="number" class="qty-obatoralsalep" min="1" value="1" required>
+                x <input type="number" class="qty-obatoralsalep" min="0" value="0" required>
                 = Rp <span class="total-obatoralsalep">0</span>
 
                 <button type="button" class="hapus-item-obatoralsalep">-</button>
@@ -309,7 +316,7 @@
                 </select>
 
                 @ Rp <span class="harga-jasajasa">0</span>
-                x <input type="number" class="qty-jasajasa" min="1" value="1" required>
+                x <input type="number" class="qty-jasajasa" min="0" value="0" required>
                 = Rp <span class="total-jasajasa">0</span>
 
                 <button type="button" class="hapus-item-jasajasa">-</button>
