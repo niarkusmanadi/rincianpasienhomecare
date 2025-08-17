@@ -60,7 +60,7 @@
             <label for="MRS" class="text-xl font-semibold">MRS</label> <br>
             <input type="date" id="MRS" name="MRS" class="bg-white p-2 w-[340px] my-2" required>
             <br>
-            <label for="KRS" class="text-xl font-semibold">KRS</label>
+            <label for="KRS" class="text-xl font-semibold">KRS</label><br>
             <input type="date" id="KRS" name="KRS" class="bg-white p-2 w-[340px] my-2" required>
         </div>
 
@@ -73,77 +73,75 @@
             <input type="number" id="qty-surflo" required class="bg-white p-2 w-[90px] my-2"/> x Rp 27.500 = Rp
             <span id="total-surflo">0</span>
             <p class="text-lg">- Spuit </p>
-            <input type="number" id="qty-spuit" required /> x Rp 5.000 = Rp
+            <input type="number" id="qty-spuit" required class="bg-white p-2 w-[90px] my-2"/> x Rp 5.000 = Rp
             <span id="total-spuit">0</span>
-            <p>- Hipafix </p>
-            <input type="number" id="qty-hipafix" required /> x Rp 37.500 = Rp
+            <p class="text-lg">- Hipafix </p>
+            <input type="number" id="qty-hipafix" required class="bg-white p-2 w-[90px] my-2"/> x Rp 37.500 = Rp
             <span id="total-hipafix">0</span>
         </div>
 
         <div class="jasapasanginfus">
-            <h3>2. Jasa Pasang Infus</h3>
+            <h3 class="text-xl font-semibold">2. Jasa Pasang Infus</h3>
             <p>- Jasa Pasang Infus </p>
-            <input type="number" id="qty-pasang-infus" required /> x Rp 50.000 = Rp
+            <input type="number" id="qty-pasang-infus" required class="bg-white p-2 w-[90px] my-2"/> x Rp 50.000 = Rp
             <span id="total-pasang-infus">0</span><br />
             <p>- Jasa Lepas Infus </p>
-            <input type="number" id="qty-lepas-infus" required /> x Rp 10.000 = Rp
+            <input type="number" id="qty-lepas-infus" required class="bg-white p-2 w-[90px] my-2"/> x Rp 10.000 = Rp
             <span id="total-lepas-infus">0</span><br />
         </div>
 
         <div class="jasaterapidokter">
-            <h3>3. Jasa Terapi Dokter</h3>
+            <h3 class="text-xl font-semibold">3. Jasa Terapi Dokter</h3>
             <p>Jasa Terapi Dokter</p>
-            <input type="number" id="qty-terapi-dokter" required /> x Rp 80.000 = Rp
+            <input type="number" id="qty-terapi-dokter" required class="bg-white p-2 w-[90px] my-2"/> x Rp 80.000 = Rp
             <span id="total-terapi-dokter">0</span><br />
         </div>
 
         <div class="cairan-infus">
-            <h3>4. Cairan</h3>
-            <br />
-
+            <h3 class="font-semibold text-xl">4. Cairan</h3>
             <div class="item">
                 <p>Cairan Dextrose NS </p>
-                <input type="number" id="qty-cairan-NS" min="0" value="0" required />
-                x Rp 25.000 = Rp <span id="total-cairan-NS">0</span><br />
-                <button type="button" onclick="hapusItem(this)">Hapus</button>
+                <input type="number" id="qty-cairan-NS" min="0" value="0" required class="bg-white p-2 w-[90px] my-2" />
+                x Rp 25.000 = Rp <span id="total-cairan-NS">0</span><br>
+                <button type="button" onclick="hapusItem(this)" class="bg-red-800 p-2 text-white text-xs">Hapus</button>
             </div>
 
             <div class="item">
                 <p>Cairan Asering </p>
-                <input type="number" id="qty-cairan-asering" min="0" value="0" required />
+                <input type="number" id="qty-cairan-asering" min="0" value="0" required class="bg-white p-2 w-[90px] my-2" />
                 x Rp 50.000 = Rp <span id="total-cairan-asering">0</span><br />
-                <button type="button" onclick="hapusItem(this)">Hapus</button>
+                <button type="button" onclick="hapusItem(this) "class="bg-red-800 p-2 text-white text-xs">Hapus</button>
             </div>
 
             <div class="item">
                 <p>Cairan Paracetamol </p>
-                <input type="number" id="qty-cairan-paracetamol" min="0" value="0" required />
+                <input type="number" id="qty-cairan-paracetamol" min="0" value="0" required class="bg-white p-2 w-[90px] my-2" />
                 x Rp 70.000 = Rp <span id="total-cairan-paracetamol">0</span><br />
-                <button type="button" onclick="hapusItem(this)">Hapus</button>
+                <button type="button" onclick="hapusItem(this) "class="bg-red-800 p-2 text-white text-xs">Hapus</button>
             </div>
             <div class="item">
                 <p>Cairan Paracetamol 1/2 </p>
-                <input type="number" id="qty-cairan-paracetamol2" min="0" value="0" required />
+                <input type="number" id="qty-cairan-paracetamol2" min="0" value="0" required class="bg-white p-2 w-[90px] my-2" />
                 x Rp 50.000 = Rp <span id="total-cairan-paracetamol2">0</span><br />
-                <button type="button" onclick="hapusItem(this)">Hapus</button>
+                <button type="button" onclick="hapusItem(this) "class="bg-red-800 p-2 text-white text-xs">Hapus</button>
             </div>
             <div class="item">
                 <p>Cairan Metronidazole </p>
-                <input type="number" id="qty-cairan-metronidazole" min="0" value="0" required />
+                <input type="number" id="qty-cairan-metronidazole" min="0" value="0" required class="bg-white p-2 w-[90px] my-2" />
                 x Rp 60.000 = Rp <span id="total-cairan-metronidazole">0</span><br />
-                <button type="button" onclick="hapusItem(this)">Hapus</button>
+                <button type="button" onclick="hapusItem(this) "class="bg-red-800 p-2 text-white text-xs">Hapus</button>
             </div>
             <div class="item">
                 <p>Cairan RL </p>
-                <input type="number" id="qty-cairan-rl" min="0" value="0" required />
+                <input type="number" id="qty-cairan-rl" min="0" value="0" required class="bg-white p-2 w-[90px] my-2" />
                 x Rp 50.000 = Rp <span id="total-cairan-rl">0</span><br />
-                <button type="button" onclick="hapusItem(this)">Hapus</button>
+                <button type="button" onclick="hapusItem(this) "class="bg-red-800 p-2 text-white text-xs">Hapus</button>
             </div>
         </div>
-        <h3>5. Injeksi</h3>
+        <h3 class="text-xl font-semibold">5. Injeksi</h3>
         <div id="injeksi-container">
             <div class="injeksi">
-                <select class="mcm-injeksi">
+                <select class="mcm-injeksi bg-white p-2 w-[200px] my-2" >
                     <option value="antibiotik" data-harga="50000">Antibiotik</option>
                     <option value="nb" data-harga="50000">NB</option>
                     <option value="citicolin" data-harga="50000">Citicolin</option>
@@ -165,71 +163,73 @@
                 </select>
 
                 @ Rp <span class="harga-injeksi">0</span>
-                x <input type="number" class="qty-injeksi" min="1" value="1" required>
+                x <input type="number" class="qty-injeksi w-[50px] bg-white p-2" min="1" value="1" required>
                 = Rp <span class="total-injeksi">0</span>
 
-                <button type="button" class="hapus-item">-</button>
-                <button type="button" class="tambah-injeksi">+</button>
+                <button type="button" class="hapus-item bg-red-800 px-2 text-white font-bold">-</button>
+                <button type="button" class="tambah-injeksi bg-green-600 px-2 text-white font-bold">+</button>
             </div>
         </div>
 
         <div class="jasakeperawatan">
-            <h3>
+            <h3 class="text-xl font-semibold">
                 6. Jasa medis petugas keperawatan ( observasi kondisi pasien / hari )
             </h3>
 
             <p>@ cek tanda tanda vital tiap 8 jam (tensi, nadi, suhu, RR)</p>
             <p>@perkembangan kondisif pasien</p>
             <p>@ jasa injeksi obat obatan 3hari 3malam</p>
-            <input type="number" id="jasakeperawatan" min="0" value="0" required />
+            <input type="number" id="jasakeperawatan" min="0" value="0" required class=" bg-white p-2 w-[80px] my-2" />
             x Rp 85.000 = Rp <span id="total-jasakeperawatan">0</span><br />
         </div>
 
-        <div class="admin">
-            <h3>7. Administrasi</h3>
+        <div class="admin my-2">
+            <h3 class="text-xl font-semibold">7. Administrasi</h3>
             <p>Administrasi & materai </p>
-            <input type="number" id="administrasi" min="0" value="0" required /> x
+            <input type="number" id="administrasi" min="0" value="0" required class=" bg-white p-2 w-[80px] my-2" /> x
             Rp 50.000 = Rp <span id="total-administrasi">0</span><br />
         </div>
 
         <div class="obatperawatan">
-            <h3>8. Obat Selama Perawatan</h3>
-            <input type="textarea" id="obat_perawatan" placeholder="Obat yang diberikan selama perawatan"
+            <h3 class="text-xl font-semibold">8. Obat Selama Perawatan</h3>
+            <input type="textarea" id="obat_perawatan" placeholder="Obat yang diberikan selama perawatan" class="bg-white p-2 w-[340px] h-[100px] my-2" 
                  /><br />
 
             <input type="textarea" id="total_obat_perawatan"
-                placeholder="harga obat yang diberikan selama perawatan" /><br />
+                placeholder="harga obat yang diberikan selama perawatan" class="bg-white p-2 w-[340px] my-2" /><br />
         </div>
 
         <div class="obatpulang">
-            <h3>9. Obat Bawa Pulang</h3>
-            <input type="textarea" id="obat_bawapulang" placeholder="Obat Pulang"  /><br />
-            <input type="text" id="total_obat_bawapulang" placeholder="harga obat yang dibawa pulang" /><br />
+            <h3 class="text-xl font-semibold">9. Obat Bawa Pulang</h3>
+            <input type="textarea" id="obat_bawapulang" placeholder="Obat Pulang"  class="bg-white p-2 w-[340px] h-[100px] my-2" /><br />
+            <input type="text" id="total_obat_bawapulang" placeholder="harga obat yang dibawa pulang" class="bg-white p-2 w-[340px] my-2"/><br />
         </div>
 
-        <h4>Total = <span id="total-biaya"></span></h4>
-        <h4>Potongan =</h4>
-        <h4>Total Akhir =</h4>
+        <div class="total-awal my-5">
+            <h4 class="text-xl font-semibold">Total = <span id="total-biaya"></span></h4>
+        <h4  class="text-xl font-semibold">Potongan =</h4>
+        <h4  class="text-xl font-semibold">Total Akhir =</h4>
+        </div>
 
         <div class="biayatambahan">
             <div>
-                <h3>- Biaya transport perawat</h3>
-                <input type="number" id="qty-transportperawat" min="0" value="0" />
+                <h3 class="font-semibold">- Biaya transport perawat</h3>
+                <input type="number" id="qty-transportperawat" min="0" value="0" class=" bg-white p-2 w-[80px] my-2"/>
                 x <span id="btransportperawat">0</span> = Rp
                 <span id="total-biayatransportperawat">0</span><br />
             </div>
 
             <!-- Off jadwal -->
             <div>
-                <h3>- Off Jadwal</h3>
-                <input type="number" id="qty-transportperawat-offjadwal" min="0" value="0" />
+                <h3 class="font-semibold">- Off Jadwal</h3>
+                <input type="number" id="qty-transportperawat-offjadwal" min="0" value="0" class=" bg-white p-2 w-[80px] my-2"/>
                 x <span id="btransportperawat-offjadwal">0</span> = Rp
                 <span id="total-biayatransportperawat-offjadwal">0</span><br />
             </div>
 
-            <h3>- Visite Dokter</h3>
+            <h3 class="font-semibold">- Visite Dokter</h3>
             <div class="input-group">
-                <select name="visite-dokter" required>
+                <select name="visite-dokter" class=" bg-white p-2 w-[200px] my-2" required>
                     <option value="">-- Pilih Jarak --</option>
                     <option value="0 - 4 km">0 - 4 km</option>
                     <option value="4,1 - 5 km">4,1 - 5 km</option>
@@ -241,16 +241,16 @@
                     <option value="10,1 - 11 km">10,1 - 11 km</option>
                 </select>
             </div>
-            <p>
+            <p class="font-semibold">
                 Paket Kunjungan 3 total visite: Rp
                 <span id="biaya-visitedokter">0</span>
             </p>
         </div>
 
-        <h3>Alat dan Bahan</h3>
+        <h3 class="font-semibold">Alat dan Bahan</h3>
         <div class="alatbahan-container" id="alatbahan-container">
             <div class="alatbahan">
-                <select class="mcm-alatbahan">
+                <select class="mcm-alatbahan  bg-white p-2 w-[200px] my-2" >
                     <option value="handscoon" data-harga="6000">Handscoon</option>
                     <option value="spuit135" data-harga="5000">Spuit 1,3,5cc</option>
                     <option value="spuit10" data-harga="20000">Spuit 10cc</option>
@@ -266,18 +266,18 @@
                 </select>
 
                 @ Rp <span class="harga-alatbahan">0</span>
-                x <input type="number" class="qty-alatbahan" min="0" value="0" >
+                x <input type="number" class="qty-alatbahan  bg-white p-2 w-[80px] my-2" min="0" value="0" >
                 = Rp <span class="total-alatbahan">0</span>
 
-                <button type="button" class="hapus-item-alatbahan">-</button>
-                <button type="button" class="tambah-alatbahan">+</button>
+                <button type="button" class="hapus-item-alatbahan bg-red-800 px-2 text-white font-bold">-</button>
+                <button type="button" class="tambah-alatbahan bg-green-600 px-2 text-white font-bold">+</button>
             </div>
         </div>
         <h3>Obat Oral dan Salep</h3>
 
         <div class="obatoralsalep-container" id="obatoralsalep-container">
             <div class="obatoralsalep">
-                <select class="mcm-obatoralsalep">
+                <select class="mcm-obatoralsalep bg-white p-2 w-[200px] my-2">
                     <option value="microlax" data-harga="35000">Microlax</option>
                     <option value="antasydsyr" data-harga="15000">Antasyd syr</option>
                     <option value="obhsyr" data-harga="15000">OBH syr</option>
@@ -295,39 +295,39 @@
                 </select>
 
                 @ Rp <span class="harga-obatoralsalep">0</span>
-                x <input type="number" class="qty-obatoralsalep" min="0" value="0" required>
+                x <input type="number" class="qty-obatoralsalep  bg-white p-2 w-[80px] my-2" min="0" value="0" required>
                 = Rp <span class="total-obatoralsalep">0</span>
 
-                <button type="button" class="hapus-item-obatoralsalep">-</button>
-                <button type="button" class="tambah-obatoralsalep">+</button>
-                <button type="button" class="hapus-semua-obatoralsalep">Hapus Semua</button>
+                <button type="button" class="hapus-item-obatoralsalep bg-red-800 px-2 text-white font-bold">-</button>
+                <button type="button" class="tambah-obatoralsalep bg-green-600 px-2 text-white font-bold">+</button>
+                <button type="button" class="hapus-semua-obatoralsalep bg-red-800 px-2 text-white text-xs">Hapus Semua</button>
             </div>
         </div>
 
         <h3>Jasa Jasa</h3>
         <div class="jasajasa-container" id="jasajasa-container">
-            <div class="jasajasa">
-                <select class="mcm-jasajasa">
+            <div class="jasajasa ">
+                <select class="mcm-jasajasa bg-white p-2 w-[200px] my-2">
                     <option value="pasangNGT" data-harga="80000">Jasa pasang NGT</option>
                     <option value="pasangkateter" data-harga="50000">Jasa pasang kateter</option>
                     <option value="lepaskateter" data-harga="40000">Jasa lepas kateter</option>
                 </select>
 
                 @ Rp <span class="harga-jasajasa">0</span>
-                x <input type="number" class="qty-jasajasa" min="0" value="0" required>
+                x <input type="number" class="qty-jasajasa  bg-white p-2 w-[80px] my-2" min="0" value="0" required>
                 = Rp <span class="total-jasajasa">0</span>
 
-                <button type="button" class="hapus-item-jasajasa">-</button>
-                <button type="button" class="tambah-jasajasa">+</button>
-                <button type="button" class="hapus-semua-jasajasa">Hapus Semua</button>
+                <button type="button" class="hapus-item-jasajasa bg-red-800 px-2 text-white font-bold">-</button>
+                <button type="button" class="tambah-jasajasa bg-green-600 px-2 text-white font-bold">+</button>
+                <button type="button" class="hapus-semua-jasajasa bg-red-800 px-2 text-white text-xs">Hapus Semua</button>
             </div>
         </div>
 
-        <h4>Total = <span id="total-biaya-tambahan"></span></h4>
-        <h4>Total yang harus dibayar= <span id="total-biaya-harusdibayar"></span></h4>
+        <h4 class="text-xl font-bold">Total Biaya Tambahan = <span id="total-biaya-tambahan"></span></h4>
+        <h4 class="text-xl font-bold">Total= <span id="total-biaya-harusdibayar"></span></h4>
 
 
-       <button type="button" id="btnWhatsapp" onclick="kirimWa()">WhatsApp</button>
+       <button type="button" id="btnWhatsapp" onclick="kirimWa()" class="w-full bg-green-600 py-2 font-bold text-white my-5">WhatsApp</button>
 
     </form>
     <script src="harga-injeksi.js"></script>
