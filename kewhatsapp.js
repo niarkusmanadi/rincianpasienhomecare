@@ -189,7 +189,7 @@ function kirimWa() {
     // 🔹 Format pesan WhatsApp
     let pesan = `*Rincian Pasien*
 
-👤 Pasien: ${nama} / ~ th
+👤 Pasien: ${nama} 
 📍 Alamat: ${alamat}
 🛣️ Jarak: ${jarak}
 🏥 Klinik: ${pasienklinik} 
